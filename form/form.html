@@ -6,7 +6,7 @@
     </head>
     <body>
         <h1 id="title">COLLEGE FORM</h1>
-        <form action="http://localhost:3003/users" method="POST">
+        <form method="POST">
             <div>
                 <span><b>Login</b></span>
                 <input type="text" name="name">
@@ -17,6 +17,7 @@
             </div>
 
             <div>
+                <span><b>User type</b></span>
                 <input type="radio" name="student">
                 <label>Student</label>
                 <input type="radio" name="professor">
@@ -32,6 +33,7 @@
             </div>
 
             <div>
+                <span><b>City</b></span>
                 <select name="city" id="citys">
                     <option value="">Select</option>
                     <option value="saoPaulo">Sao Paulo</option>
@@ -46,6 +48,7 @@
             </div>
 
             <div>
+                <span><b>Programming language</b></span>
                 <select size="5" name="language">
                     <option value="js">Javascript</option>
                     <option value="c">C</option>
@@ -57,7 +60,8 @@
 
             
             
-            <button>Send</button>
+            <button formaction="http://localhost:3003/users">Send new user</button>
+            <button formaction="http://localhost:3003/users/1">Change user data</button>
         </form>
     </body>
 </html>
